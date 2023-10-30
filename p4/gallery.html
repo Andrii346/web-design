@@ -26,7 +26,7 @@
 			display:block; 
 			z-index: 0;
 		}
-                h3:nth-child(n + 2){
+                .my_photo h3, .photo_folder h3, .photo_online h3{
 			transform: scale(1.3)
 		}
 		
@@ -39,13 +39,16 @@
            <a href="index.html">Назад на головну</a>	
            <h2>Мої Зображення</h2>
            <h3>Зображення у цій папці</h3>
-	</div>	
 	   <img src="640x480.jpg" alt="640x480">
-           <h3>Зображення у папці</h3>
-           <img src="image/640x480.jpg" alt="640x480">
-           <h3>Зображення онлайн</h3>
-           <img src="https://place-hold.it/1280x1024" alt="1280×1024">
-         	
+		<div class="photo_folder">
+	           <h3>Зображення у папці</h3>
+	           <img src="image/640x480.jpg" alt="640x480">
+			<div class="photo_online">
+		           <h3>Зображення онлайн</h3>
+		           <img src="https://place-hold.it/1280x1024" alt="1280×1024">
+			</div>	
+		</div>	
+         </div>	
     </div>
 </body>
 </html>
